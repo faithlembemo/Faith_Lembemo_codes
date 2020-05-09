@@ -1,6 +1,6 @@
 #Import data set from excel
   library(readxl)
-  heart <- read_excel("~/Desktop/Propensity /final project/RSTUDIO/Faith_Lembemo_project_codes/heart.xlsx", 
+  heart <- read_excel("~/Desktop/Faith_Lembemo_project_codes/heart.xlsx", 
                       sheet = "Heart")
   
 View(heart)

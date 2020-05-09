@@ -1,14 +1,14 @@
 ############################### PROPENSITY SCORE METHOD CODES #################
 #IMPORT DATASET
 library(readxl)
-heart <- read_excel("~/Desktop/Propensity /final project/RSTUDIO/Faith_Lembemo_project_codes/heart.xlsx", 
+heart <- read_excel("~/Desktop/Faith_Lembemo_project_codes/heart.xlsx", 
                     sheet = "Heart")
 #View(heart)
 
 #variable names
 names(heart)
 
-set.seed(21122602)
+set.seed(2000000)
 
 #Check the summary of the data set if we have missing values
 summary(heart)
