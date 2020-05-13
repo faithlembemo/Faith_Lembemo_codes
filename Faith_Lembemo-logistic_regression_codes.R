@@ -8,7 +8,7 @@ heart <- read_excel("~/Desktop/Faith_Lembemo_project_codes/heart.xlsx",
 #variable names
 names(heart)
 
-set.seed(2000000)
+#set.seed(2000)
 
 #Check the summary of the data set if we have missing values
 summary(heart)
