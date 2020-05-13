@@ -5,7 +5,7 @@
   
 View(heart)
 
-set.seed(2000000)
+set.seed(2000)
   # check variable names
   #names(heart)
   
