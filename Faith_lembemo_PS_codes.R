@@ -4,7 +4,7 @@
                       sheet = "Heart")
   
 View(heart)
- set.seed(2000000000)
+ #set.seed(20000)
   # check variable names
   #names(heart)
   
@@ -133,12 +133,12 @@ View(heart)
   View(match_heart2)
   
   ### Display the distributions of the propensity scores before and after the matching
-  set.seed(1563)
+  set.seed(6000)
   
   ## Create weighted samples out of the matched smokers  and non smokers
-  pscore.treated.matched <- sample(match_heart2$propensity_scores[match_heart2[,"Smoker"]==1], 10000, replace=TRUE,
+  pscore.treated.matched <- sample(match_heart2$propensity_scores[match_heart2[,"Smoker"]==1], size=10000, replace=TRUE,
                                    prob=match_heart2$weights[match_heart2[,"Smoker"]==1])
-  pscore.control.matched <- sample(match_heart2$propensity_scores[match_heart2[,"Smoker"]==0], 10000, replace=TRUE,
+  pscore.control.matched <- sample(match_heart2$propensity_scores[match_heart2[,"Smoker"]==0], size=10000, replace=TRUE,
                                    prob=match_heart2$weights[match_heart2[,"Smoker"]==0])
   
   ### Create 4 histograms of the propensity scores containing also the density
